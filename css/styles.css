@@ -34,7 +34,6 @@ th {
 }
 
 td {
-	border-bottom: 1px solid #1F2023;
 }
 
 code, blockquote {
@@ -438,7 +437,8 @@ div#intro h2, div#intro p {
 
 div#intro p {
 	font-size: 1.3em;
-	color: #ddd;
+	color: #eee;
+	text-shadow: 1px 1px 0 #000;
 	line-height: 1.3em;
 }
 div#body.no-intro {
@@ -717,7 +717,7 @@ footer .footer-content li a {
 }
 
 footer .footer-content li {
-	color: #41484E;
+	color: #6F7A85;
 	line-height: 1.5em;
 	font-size: 0.85em;
 }
