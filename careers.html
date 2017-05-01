@@ -49,18 +49,17 @@
 			</div>
 		</div>
 		<div id="body" class="width">
-			<aside class="sidebar big-sidebar left-sidebar">
+			<aside class="sidebar big-sidebar left-sidebar" style="margin-bottom: 255px">
 				<ul>	
 					<li>
 						<ul class="blocklist">
 							<li>
-								<span>&nbsp;&nbsp;&nbsp;Filter</span>
+								<span>&nbsp;&nbsp;&nbsp;Filter by Department</span>
 								<ul>
-									<li>&nbsp;&nbsp;&nbsp;<input type="checkbox" />&nbsp;&nbsp;&nbsp;Military</li>
-									<li><a href="science.html">Scientific Research</a></li>
-									<li><a href="weapons.html">Weapons Development</a></li>
-									<li><a href="space.html">Space Exploration</a></li>
-									<li><a href="safety.html">Public Safety</a></li>
+									<li>&nbsp;&nbsp;&nbsp;<input id="checkpublic" type="checkbox" onchange="filter()" />&nbsp;&nbsp;&nbsp;Public Safety</li>
+									<li>&nbsp;&nbsp;&nbsp;<input id="checkscience" type="checkbox" onchange="filter()" />&nbsp;&nbsp;&nbsp;Scientific Research</li>
+									<li>&nbsp;&nbsp;&nbsp;<input id="checkweapons" type="checkbox" onchange="filter()" />&nbsp;&nbsp;&nbsp;Weapons Development</li>
+									<li>&nbsp;&nbsp;&nbsp;<input id="checkurban" type="checkbox" onchange="filter()" />&nbsp;&nbsp;&nbsp;Urban Development</li>
 								</ul>
 							</li>
 						</ul>
@@ -68,17 +67,123 @@
 				</ul>
 			</aside>
 			<section id="content" class="two-column with-left-sidebar">
-				<article>
-					<h2>What we do:</h2>
-					<p>We are ShinRa, and we provide services to Midgar and other surrounding cities. Our mako reactors generate electricity that provides power to the developed world. We price ourselves on upholding strong ethical policies and maintaining our strong operation standards.</p>
-					<p> Should you wish to use this template unbranded you can buy a template license from our website for 8.00 GBP, this will allow you remove all branding related to our site, for more information about this see below.</p>
+				<article class="public job">
+					<fieldset style="border: none;">
+						<h3>ShinRa Infantry</h3>
+						<form>
+							<p>
+								<label for="dpt1">Department:</label>
+								<span id="dpt1">Public Safety</span>
+							</p>
+							<p>
+								<label for="rpt1">Reports To:</label>
+								<span id="rpt1">Director of Public Safety</span>
+							</p>
+							<p>
+								<label for="dsc1">Description:</label>
+								<span id="dsc1" style="overflow: hidden; display:block;">ShinRa infantrymen make up the bulk of the ShinRa army. As an infantryman, you will be responsible for maintaining peace amongst the population. You will work with your fellow soldiers as a group in order to accomplish various tasks assigned to you.</span>
+							</p>
+							<p>
+								<label for="rsp1">Responsibilities:</label>
+								<span id="rsp1" style="overflow: hidden; display:block;">
+									Train using military equipment and tactics.
+									<br/>Perform military operation with a unit under a militant leader.
+									<br/>Police Midgar and enfore safety laws.
+									<br/>Test experimental weapons and provide feedback.
+									<br/>Work with SOLDIER members on large scale operations.
+									<br/>Record actions in log and submit to superiors during combat operations.
+								</span>
+							</p>
+							<p>
+								<label for="rq1">Requirements:</label>
+								<span id="rq1" style="overflow: hidden; display:block;">
+									Discipline and the ability to follow orders.
+									<br/>Strong physical capabilities needed to perform combat.
+									<br/>Must have the ability for travel and relocation.
+								</span>
+							</p>
+						</form>
+					</fieldset>
 				</article>
-				<article class="expanded">
-					<h2>Buy unbranded</h2>
-					<div class="article-info">Posted on <time datetime="2013-05-14">14 May</time> by <a href="#" rel="author">Joe Bloggs</a></div>
-					<p>Purchasing a template license for 8.00 GBP (at time of writing around 12 USD) gives you the right to remove any branding including links, logos and source tags relating to ZyPOP. As well as waiving the attribution requirement, your payment will also help us provide continued support for users as well as creating new web templates. Find out more about how to buy at the licensing page on our website which can be accessed at <a href="http://zypopwebtemplates.com/licensing" title="template license">http://zypopwebtemplates.com/licensing</a></p>
-					<h3>Lorem lipsum</h3>
-					<p>Morbi fermentum condimentum felis, commodo vestibulum sem mattis sed. Aliquam magna ante, mollis vitae tincidunt in, malesuada vitae turpis. Sed aliquam libero ut velit bibendum consectetur. Quisque sagittis, est in laoreet semper, enim dui consequat felis, faucibus ornare urna velit nec leo. Maecenas condimentum velit vitae est lobortis fermentum. In tristique sem vitae metus ornare luctus tempus nisl volutpat. Integer et est id nisi tempus pharetra sagittis et libero.</p>
+				<article class="science job">
+					<fieldset style="border: none;">
+						<h3>ShinRa Scientist</h3>
+						<form>
+							<p>
+								<label for="dpt3">Department:</label>
+								<span id="dpt3">Scientific Research</span>
+							</p>
+							<p>
+								<label for="rpt3">Reports To:</label>
+								<span id="rpt3">Professor Hojo</span>
+							</p>
+							<p>
+								<label for="dsc3">Description:</label>
+								<span id="dsc3" style="overflow: hidden; display:block;">As a ShinRa scientist, you will conduct scientific experiments and research, which definitely does not include human genetic experiments or immoral studies. Under Professor Hojo, you will develop the future of ShinRa technology.</span>
+							</p>
+							<p>
+								<label for="rsp3">Responsibilities:</label>
+								<span id="rsp3" style="overflow: hidden; display:block;">
+									Develop the latest in mako and robotic technology.
+									<br/>Perform scientific research and document findings.
+									<br/>Engineer new technology utilizing research subjects.
+									<br/>Maintain a strong moral and ethical workspace.
+									<br/>Perform absolutely no genetic modification or human cloning.
+								</span>
+							</p>
+							<p>
+								<label for="rq3">Requirements:</label>
+								<span id="rq3" style="overflow: hidden; display:block;">
+									Must have graduated with a PhD in a major scientific field.
+									<br/>Must have passion for research and new technology.
+									<br/>Must think outside the box in order to push ShinRa in new directions.
+									<br/>Must not be willing to genetically engineer a perfect SOLDIER operative that will destroy the world and become a god.
+								</span>
+							</p>
+						</form>
+					</fieldset>
+				</article>
+				<article class="public job">
+					<fieldset style="border: none;">
+						<h3>SOLDIER</h3>
+						<form>
+							<p>
+								<label for="dpt2">Department:</label>
+								<span id="dpt2">Public Safety</span>
+							</p>
+							<p>
+								<label for="rpt2">Reports To:</label>
+								<span id="rpt2">Director of Public Safety</span>
+							</p>
+							<p>
+								<label for="dsc2">Description:</label>
+								<span id="dsc2" style="overflow: hidden; display:block;">ShinRa SOLDIER operatives are the truly elite military units. They are tasked with difficult operations and are expected to perform exceptionally and without question. They are also expected to act as leaders to the ShinRa infantry. You will be ranked from third to first class, depending on performance.</span>
+							</p>
+							<p>
+								<label for="rsp2">Responsibilities:</label>
+								<span id="rsp2" style="overflow: hidden; display:block;">
+									Complete difficult operation without waivering.
+									<br/>Lead ShinRa troops during operations.
+									<br/>Conduct solo infiltrations during high risk scenarios.
+									<br/>Police Midgar and enfore safety laws.
+									<br/>Test experimental weapons and provide feedback.
+								</span>
+							</p>
+							<p>
+								<label for="rq2">Requirements:</label>
+								<span id="rq2" style="overflow: hidden; display:block;">
+									Incredible combat prowess and physical strength.
+									<br/>Must pass the mako treatment successfully.
+									<br/>Must have the ability for travel and relocation.
+									<br/>Must have the ability to perform immoral tasks without question, not that ShinRa will ask you to.
+									<br/>Must never betray ShinRa and become an evil god determined to destroy all of Gaia.
+								</span>
+							</p>
+						</form>
+					</fieldset>
+				</article>
+				<article id='nojob' class="job" style="display: none;">
+					<p>Sorry, there are currently no positions in the department you have selected.</p>
 				</article>
 			</section>
 			<div class="clear"></div>
@@ -90,4 +195,57 @@
 		</div>
 	</footer>
 </body>
+<script type="text/javascript">
+	function filter() {
+		var jobs = document.getElementsByClassName('job');
+		for (i = 0; i < jobs.length; i++) {
+			jobs[i].style.display = 'none';
+		}
+		var weap = document.getElementById('checkweapons').checked;
+		var sci = document.getElementById('checkscience').checked;
+		var pub = document.getElementById('checkpublic').checked;
+		var urb = document.getElementById('checkurban').checked;
+
+		if (!(weap || sci || pub || urb)) {
+			for (i = 0; i < jobs.length; i++) {
+				if (jobs[i].id != 'nojob')
+					jobs[i].style.display = 'block';
+			}
+		}
+
+		if (weap) {
+			filtertype('weapons');
+		}
+		if (sci) {
+			filtertype('science');
+		}
+		if (pub) {
+			filtertype('public');
+		}
+		if (urb) {
+			filtertype('urban');
+		}
+
+
+		var jobs = document.getElementsByClassName('job');
+		var any = false;
+		for (i = 0; i < jobs.length; i++) {
+			if (jobs[i].style.display != 'none') {
+				any = true;
+				break;
+			}
+		}
+		if (!any) {
+			var nojob = document.getElementById('nojob');
+			nojob.style.display = "block";
+		}
+	};
+
+	function filtertype(clssnm) {
+		var jobs = document.getElementsByClassName(clssnm);
+		for (i = 0; i < jobs.length; i++) {
+			jobs[i].style.display = 'block';
+		}
+	}
+</script>
 </html>
